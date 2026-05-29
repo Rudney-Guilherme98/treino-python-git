@@ -24,16 +24,21 @@ heroi = Aventureiro("Rudney")
 while True:
     
     # 3. Capturando a escolha do usuário e guardando na variável 'opcao'
-    opcao = input("Digite 1 para Treinar ou 2 para Sair: ")
+    opcao = input("Digite 1 para Treinar, 2 para descansar e recuperar a energia ou 3 para Sair: ")
     
     # 4. Verificando a escolha (Note os dois sinais de igual '==' para comparar!)
     if opcao == "1":
         heroi.treinar() # Chama a ação da fábrica! O print já está lá dentro.
-        
+
+    #Acessar a característica (atributo) da vida do seu objeto heroi ali mesmo e forçar o valor dela a voltar a ser 100.
     elif opcao == "2":
+        heroi.vida = 100
+        print("O herói descansou na taverna. Vida restaurada para 100!")
+              
+    elif opcao == "3":
         print("Fim de jogo!")
         break # A palavra mágica que 'quebra' e encerra o loop infinito
         
     else:
-        # Um bônus: se ele digitar '3' ou letras sem querer!
+        # Um bônus: se ele digitar '' ou letras sem querer!
         print("Opção inválida, tente novamente.")
