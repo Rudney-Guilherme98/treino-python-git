@@ -1,0 +1,29 @@
+# 🛡️ Sistema de Guilda de Aventureiros (Mini RPG)
+
+Este é um projeto interativo de texto feito em Python. O objetivo principal deste sistema foi consolidar meus estudos em lógica de programação e a transição para a **Programação Orientada a Objetos (POO)**.
+
+## 🎮 Funcionalidades do Sistema
+O programa simula um menu interativo de um mini-jogo de RPG onde o usuário pode gerenciar o seu herói:
+- **Treinar (Opção 1):** Utiliza um método dentro da Classe para somar 20 pontos à vida atual do herói.
+- **Descansar (Opção 2):** Manipula diretamente o atributo de vida do herói pelo programa principal, restaurando a saúde de volta ao limite de 100 pontos.
+- **Sair (Opção 3):** Encerra o loop e finaliza o jogo.
+- **Tratamento de erros:** Caso o jogador digite uma opção inválida, o sistema avisa e pede uma nova entrada sem quebrar.
+
+## 🧠 O que eu aprendi neste projeto
+Durante o desenvolvimento, eu treinei e apliquei os seguintes conceitos do Python:
+* **Classes e Objetos:** Como criar a "fábrica" (`class`) e construir produtos a partir dela.
+* **O Método Construtor (`__init__`):** Como definir o estado inicial do objeto logo no seu nascimento.
+* **O uso do `self`:** Compreensão de como o objeto se refere aos seus próprios atributos internamente.
+* **Encapsulamento vs. Acesso Direto:** A diferença entre alterar as características de um objeto por dentro (usando métodos como `def treinar()`) e alterar pelo lado de fora (como `heroi.vida = 100`).
+* **Estruturas de Controle:** Uso de `while True` para manter o sistema vivo e `if / elif / else` para o fluxo de decisões do menu.
+
+## 🛠️ Tecnologias Utilizadas
+- **Python 3**
+- VS Code
+
+## 🚀 Como executar o projeto
+1. Certifique-se de ter o [Python](https://www.python.org/) instalado em sua máquina.
+2. Clone este repositório ou baixe o arquivo `.py`.
+3. Abra o terminal e rode o seguinte comando:
+   ```bash
+   python nome_do_seu_arquivo.py
